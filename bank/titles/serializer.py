@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from  titles.models import Title
+from titles.models import Title
+
 
 class TitleSerializer(serializers.ModelSerializer):
     class Meta:

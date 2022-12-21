@@ -6,13 +6,30 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('titles', '0001_initial'),
+        ("titles", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='title',
-            name='title',
-            field=models.CharField(choices=[('DOLAR', 'DOLAR'), ('TÍTULO DE PARTICIPACIÓN RENTA VARIABLE', 'TÍTULO DE PARTICIPACIÓN RENTA VARIABLE'), ('TITULO DE PARTICIPACIÓN', 'TITULO DE PARTICIPACIÓN'), ('TIDIS', 'TIDIS'), ('TITULOS HIPOTECARIOS', 'TITULOS HIPOTECARIOS'), ('TES UVR', 'TES UVR'), ('TES TRM', 'TES TRM'), ('TES PESOS', 'TES PESOS'), ('BONOS DEL TESORO EEUU', 'BONOS DEL TESORO EEUU'), ('TES IPC', 'TES IPC')], max_length=50),
+            model_name="title",
+            name="title",
+            field=models.CharField(
+                choices=[
+                    ("DOLAR", "DOLAR"),
+                    (
+                        "TÍTULO DE PARTICIPACIÓN RENTA VARIABLE",
+                        "TÍTULO DE PARTICIPACIÓN RENTA VARIABLE",
+                    ),
+                    ("TITULO DE PARTICIPACIÓN", "TITULO DE PARTICIPACIÓN"),
+                    ("TIDIS", "TIDIS"),
+                    ("TITULOS HIPOTECARIOS", "TITULOS HIPOTECARIOS"),
+                    ("TES UVR", "TES UVR"),
+                    ("TES TRM", "TES TRM"),
+                    ("TES PESOS", "TES PESOS"),
+                    ("BONOS DEL TESORO EEUU", "BONOS DEL TESORO EEUU"),
+                    ("TES IPC", "TES IPC"),
+                ],
+                max_length=50,
+            ),
         ),
     ]
