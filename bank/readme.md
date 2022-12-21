@@ -2,12 +2,12 @@
 
 - Main branch has the code for working in local and to_deploy branch has some changes in order to be able to deploy the project with zappa library.
 
-For running the project in local run it with the dockerfile that is in this project
+- for running the project in local run it with the dockerfile that is in this project
 
--for running the project locally run python manage.py runserver
--for running the test run python manage.py test
+- for running the project locally run python manage.py runserver
+- for running the test run python manage.py test
 
--The current project is deployed in this host: https://dnkge4u668.execute-api.us-east-1.amazonaws.com/
+- The current project is deployed in this host: https://dnkge4u668.execute-api.us-east-1.amazonaws.com/
 and for accessing the endpoints deployed it would be necessary to  first enter in the browser https://dnkge4u668.execute-api.us-east-1.amazonaws.com/dev/
 
 The project was deployed with zappa, zappa does the cloudformation and configures the project that works with event bridge, api gateway and lambdas. The DB that I configured to this project is postgres with RDS service, aurora could be a better option but for practicity due that this is a test project I didn't create it with aurora.
