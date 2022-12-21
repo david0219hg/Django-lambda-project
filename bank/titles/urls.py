@@ -1,6 +1,7 @@
 from django.urls import path
-from titles.views import TitleViewSet
+from titles.views import TitleViewSet, TitleQuantityViewSet
 
 urlpatterns = [
-    path('register/', TitleViewSet.as_view({'post': 'create'})),
+    path('', TitleViewSet.as_view({'post': 'create', 'get': 'list', 'delete': 'destroy', 'put': 'update'})),
+    path('quantity/', TitleQuantityViewSet.as_view({'get': 'list'}))
 ]
