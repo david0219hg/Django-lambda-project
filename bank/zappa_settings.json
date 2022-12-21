@@ -1,0 +1,11 @@
+{
+    "dev": {
+        "aws_region": "us-east-1",
+        "django_settings": "bank.settings",
+        "profile_name": "default",
+        "project_name": "bank",
+        "runtime": "python3.9",
+        "s3_bucket": "zappa-o3g8a3ia2",
+        "slim_handler": true
+    }
+}
